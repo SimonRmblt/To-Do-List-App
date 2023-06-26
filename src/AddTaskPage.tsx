@@ -26,10 +26,10 @@ const AddTaskPage = ({showAddTask, toggleAddTaskPopup, handleInputChange, handle
                     />
                     <View style={[addTaskPage.popupButtons]}>
                         <TouchableOpacity style={[addTaskPage.button]} onPress={toggleAddTaskPopup}>
-                            <Text style={{color: 'white'}}>Cancel</Text>
+                            <Text style={{color: 'white', fontSize: 20}}>Cancel</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={[addTaskPage.buttonConfirm]} onPress={addItem}>
-                            <Text style={{color: 'white'}}>Add task</Text>
+                            <Text style={{color: 'white', fontSize: 20}}>Add task</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -52,7 +52,7 @@ const addTaskPage = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '50%',
+        width: '60%',
         marginTop: 30,
     },
     input: {

@@ -20,7 +20,7 @@ const addTaskButton = StyleSheet.create({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
-        bottom: 30,
+        bottom: 100,
         right: 30,
     },
     listIcon: {

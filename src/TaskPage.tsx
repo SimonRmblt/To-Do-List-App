@@ -21,7 +21,7 @@ const TaskPage = ({showTask, toggleTaskPopup, activeCard, setActiveCard, cards, 
                         <Text style={{
                             color: 'black',
                             fontSize: 30,
-                            paddingRight: 50
+                            paddingHorizontal: 30,
                         }}>{activeCard !== -1 ? cards[activeCard].text : "null"}</Text>
                     </View>
                     <View style={[taskPage.scrollDescPart]}>

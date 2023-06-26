@@ -92,11 +92,13 @@ function App(): JSX.Element {
 
     return (
         <SafeAreaView style={[styles.sectionContainer]}>
-            <MainTabs changePage={changePage} isClicked={isClicked}/>
-            <CardsPreview cards={cards} cardsState={cardsState} toggleTaskPopup={toggleTaskPopup}/>
+            <View style={{marginBottom: 79,}}>
+                <CardsPreview cards={cards} cardsState={cardsState} toggleTaskPopup={toggleTaskPopup}/>
+            </View>
             <TaskPage cards={cards} activeCard={activeCard} toggleTaskPopup={toggleTaskPopup} removeElement={removeElement} changeStatus={changeStatus} setActiveCard={setActiveCard} showTask={showTask}/>
             <AddTaskPage addItem={addItem} handleInputChange={handleInputChange} handleDescChange={handleDescChange} showAddTask={showAddTask} toggleAddTaskPopup={toggleAddTaskPopup}/>
             <AddTaskButton toggleAddTaskPopup={toggleAddTaskPopup}/>
+            <MainTabs changePage={changePage} isClicked={isClicked}/>
         </SafeAreaView>
     );
 }
